@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>OBMC Contact Us</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+ <style>
+  body{
+    background-image: url(bg.png);
+    background-repeat: no-repeat;
+    font-family: 'Gill Sans'
+  } 
+
+  .navbar {
+  font-size: 16px;
+  }
+
+  .nav-link {
+  margin: 0 10px;
+  font-weight: 500;
+  }
+
+  .navbar-nav {
+  margin-left: 660px;
+  }
+
+  .nav-link:hover {
+  color: #034a85;
+  text-decoration: underline;
+  }
+
+  .nav-bottom-line {
+  height: 8px;
+  background-color: #034a85;
+  }
+  
+  .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;            
+  margin-top: 40px;
+  margin-bottom: 50px;
+  }
+  
+  .req, .apply {
+  background-color: #034a85; 
+  color: #fff;
+  border-radius: 50px;             
+  padding: 20px 50px;    
+  font-weight: bold;
+  font-size: 20px;       
+  border: none;
+  width: 280px;      
+  text-transform: uppercase;
+  display: flex;         
+  align-items: center;
+  justify-content: center;
+  }
+  
+  .req::after, .apply::after {
+  display: none;
+  }
+  
+  .req:hover, .apply:hover {
+  background-color: #034a85;
+  }
+  
+  .dropdown-menu {
+  border-radius: 20px;
+  border: none;
+  padding: 15px 0;
+  width: 280px;
+  text-align: center;
+  }
+  
+  .dropdown-item {
+  padding: 12px 20px;
+  font-weight: 500;
+  color: #000;
+  }  
+  
+  .dropdown-item:hover {
+  background-color: #f1f5f9;
+  color: #034a85;
+  }
+  
+  h1{
+  color: #034a85;
+  font-weight: bold;
+  font-size: 65px;
+  margin-top: 35px;
+  text-align: center;
+  }
+  
+  h2{
+  color: #000;
+  font-weight: bold;
+  font-size: 45px;
+  margin-top: 30px;
+  text-align: center;
+  } 
+  
+  h3{
+  color: #034a85;
+  font-weight: bold;
+  font-size: 45px;
+  margin-top: 30px;
+  text-align: center;
+  }
+  
+  h4{
+    font-weight: bold;
+  }
+  
+  h5{
+  font-size: 28px;
+  color: #034a85;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: left;
+  }
+  
+  p{
+    color: #000;
+    font-weight: 500;
+    font-size: 25px;
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+ .form-header {
+  background-color: #034a85;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin: 0;    
+  width: 100%;
+}
+
+ .form-container p{
+  margin-left: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-align: left;
+ }
+
+ .card{
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px #000;
+    max-width: 90%;
+    padding: 10%;
+    margin: 35px auto 50px;
+    opacity: 0.9;
+  }
+
+  .row{
+    margin: auto;
+  }
+
+  .triple{
+    display: block;
+  }
+
+  .double{
+    width:100%; 
+    float:left; 
+    padding-right:10px;
+  }
+
+  label{
+    margin-left: 5px;
+    font-size: 18px;
+  }
+
+  .name{
+    width:50%; 
+    float:left;
+  }
+
+  .input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+    box-sizing: border-box;
+  }
+
+  .select{
+    width:100%;
+    height:42px;
+    padding:6px 10px;
+    border-radius:6px;
+    border:1px solid #ced4da;
+  }
+  
+  .radio {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .radio-buttons {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  .radio-buttons input, .radio-buttons label {
+    margin-top: 8px;
+    font-size: 18px;
+  }
+
+  .radio-buttons input {
+    margin-right: 5px;
+    cursor: pointer;
+  }
+
+  .checkbox{
+    display: flex; 
+    align-items: flex-start; 
+    margin-top: 10px;
+  }
+
+  .checkbox label{
+    color: #000; 
+    cursor: pointer;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .submit-btn{
+    display: block;
+  }
+
+  </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="logo.png" alt="logo" height="50px" width=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="index.html" target="_self">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="page2.html" target="_self" >Programs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="page3.html" target="_self" >Enrollment</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="page4.html" target="_self" >Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="page5.html" target="_self" >About Us</a>
+        </li>
+      </ul>
+
+      <form class="d-flex">
+         <a href="https://obmontessori.orangeapps.ph/landing/obmontessori/" class="btn btn-primary" type="button">My Portal</button></a>
+      </form>
+
+    </div>
+  </div>
+</nav>
+
+<div class="nav-bottom-line"></div>
+
+<h1>Enrollment Process</h1>
+
+<div class="admissions">
+
+  <div class="desc">
+    <h2>Admissions are now open for A.Y. 2026-2027!</h2>
+    <p>At O.B. Montessori Center, we are ready to help you with a smooth admission and enrollment experience for your child.</p>
+  </div>
+
+  <div class="buttons">
+  
+  <div class="dropdown">
+  <button class="req" type="button" data-bs-toggle="dropdown">REQUIREMENTS</button>
+  <ul class="dropdown-menu shadow">
+    <li><a class="dropdown-item" href="https://obmontessori.edu.ph/casa-requirements-angeles">Casa</a></li>
+    <li><a class="dropdown-item" href="https://obmontessori.edu.ph/grade1to5-requirements-angeles">Grades 1 to 5</a></li>
+    <li><a class="dropdown-item" href="https://obmontessori.edu.ph/grades6to11-requirements-angeles">Grades 6 to 11</a></li>
+  </ul>
+  </div>
+  
+  <div class="dropdown">
+  <button class="apply" type="button" data-bs-toggle="dropdown">APPLICATION</button>
+  <ul class="dropdown-menu shadow">
+    <li><a class="dropdown-item" href="https://obmangelessis.orangeapps.ph/ob/admission">Angeles</a></li>
+    <li><a class="dropdown-item" href="https://obmfairviewsis.orangeapps.ph/ob/admission">Fairview</a></li>
+    <li><a class="dropdown-item" href="https://obmgreenhillssis.orangeapps.ph/ob/admission">Greenhills</a></li>
+    <li><a class="dropdown-item" href="https://obmlaspinassis.orangeapps.ph/ob/admission">Las Piñas</a></li>
+    <li><a class="dropdown-item" href="https://obmstaanasis.orangeapps.ph/ob/admission">Sta. Ana</a></li>
+  </ul>
+</div>
+ 
+</div>
+
+<h3>Kindly fill out the form below for former students.</h3>
+
+<div class="form-container">
+<div class="card p-2">
+  <form>
+
+    <div class="form-header">
+      <h4>ENROLLMENT FORM</h4>
+    </div>
+
+<h5>Student Information</h5>
+
+<div class="row mb-2">
+  <div class="name p-2">
+    <label for="firstname">First Name:</label>
+      <input type="text" class="form-control" id="firstname" placeholder="Enter your First name" name="firstname">
+</div>
+
+<div class="name p-2">
+  <label for="lastname">Last Name:</label>
+  <input type="text" class="form-control" id="lastname" placeholder="Enter your Last name" name="lasttname">
+</div>
+</div>
+
+<div class="row mb-3">
+  <div class="triple col-md-4">
+     <label>Date of Birth</label>
+     <input type="date" class="input">
+   </div>
+
+  <div class="triple col-md-4">
+    <label>Gender</label>
+      <select class="select">
+       <option>Select</option>
+       <option>Male</option>
+       <option>Female</option>
+      </select>
+  </div>
+
+  <div class="triple col-md-4">
+    <label>Grade Level</label>
+      <select class="select">
+       <option>Select</option>
+       <option>Grade 7</option>
+        <option>Grade 8</option>
+        <option>Grade 9</option>
+      </select>
+   </div>
+</div>
+
+<h5>Contact Details</h5>
+<div class="row mb-3">
+  <div class="double mb-3">
+    <label>Email Address:</label>
+    <input type="email" class="input" placeholder="Enter your Email Address">
+  </div>
+
+  <div class="double mb-3">
+    <div>
+    <label>Contact Number:</label>
+    <input type="text" class="input" placeholder="Enter your Contact Number">
+  </div>
+</div>
+
+<h5>Other Information</h5>
+<p>Mode of Learning (Kindly pick from the two options):</p>
+<div class="row mb-1">
+  <div class="radio">
+    <div class="radio-buttons">
+      <input type="radio" name="mode" id="online">
+      <label for="online">🖥️ Online</label>
+    </div>
+
+    <div class="radio-buttons">
+      <input type="radio" name="mode" id="f2f">
+      <label for="f2f">👥 Face-To-Face</label>
+    </div>
+  </div>
+
+  <div class="checkbox">
+    <input type="checkbox" id="confirm" style="margin-top: 5px; margin-right: 10px; cursor: pointer;">
+    <label for="confirm">I can confirm that all of the information provided is true and complete.</label>
+  </div>
+</div>
+
+<button type="submit" class="btn btn-primary" style="display:block; opacity: 1; margin:18px auto 20px; padding:14px; font-size:18px; width:60%; border-radius:8px;">Submit Enrollment</button>
+
+</form>
+</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

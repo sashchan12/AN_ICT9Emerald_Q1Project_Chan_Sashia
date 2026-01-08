@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>OBMC Contact Us</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+  body{
+    background-image: url(bg.png);
+    font-family: 'Gill Sans'
+  } 
+
+.navbar {
+  font-size: 16px;
+}
+
+.nav-link {
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+.navbar-nav {
+  margin-left: 660px;
+}
+
+.nav-link:hover {
+  color: #034a85;
+  text-decoration: underline;
+  
+}
+
+.nav-bottom-line {
+  height: 8px;
+  background-color: #034a85;
+}
+
+.form-container {
+  padding: 20px;
+  margin-top: 35px;
+  margin-bottom: -20px;
+}
+
+.contact-section {
+  margin: 40px auto 0 auto;
+}
+
+.side-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  border-radius: 8px;
+  box-shadow: 0 4px 12px #00000080;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 20px;
+  height: 100%;
+  box-shadow: 0 4px 12px #00000080;
+}
+
+.form-header {
+  background-color: #034a85;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin: -20px -20px 20px -20px; 
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+}
+
+.form{
+  width: 100%;
+}
+
+.info-table-head{
+  background-color: #034a85;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 5px;
+}
+
+.info-table{
+  padding: 2px;
+  margin-bottom: 50px;
+}
+
+.container{
+  width: 100%;
+}
+h1{
+  color: #034a85;
+  font-weight: bold;
+  font-size: 65px;
+  margin-top: 35px;
+  text-align: center;
+}
+
+h2{
+  font-weight: bold;
+  font-size: 30px;
+}
+  </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-light">
+
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="logo.png" alt="logo" height="50px" width=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="index.html" target="_self">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="page2.html" target="_self" >Programs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="page3.html" target="_self" >Enrollment</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="page4.html" target="_self" >Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="page5.html" target="_self" >About Us</a>
+        </li>
+      </ul>
+
+      <form class="d-flex">
+        <a href="https://obmontessori.orangeapps.ph/landing/obmontessori/" class="btn btn-primary" type="button">My Portal</button></a>
+      </form>
+
+    </div>
+  </div>
+</nav>
+
+<div class="nav-bottom-line"></div>
+
+<h1>Contact Us Today!</h1>
+<div class="form">
+
+<div class="container form-container contact-section">
+  <div class="row align-items-stretch gx-5">
+    
+    <div class="col-md-6 mb-4">
+      <img src="obmc.jpg" alt="Contact Us" class="side-img">
+    </div>
+
+    <div class="col-md-6 mb-4">
+      <div class="card">
+        <h2 class="form-header">Message Form</h2>
+        
+        <form>
+          <div class="mb-3">
+            <label for="fullname">Full Name:</label>
+            <input type="text" class="form-control" id="fullname" placeholder="Enter your Fullname">
+          </div>
+
+          <div class="mb-3">
+            <label for="email">Email Address:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your Email Address">
+          </div>
+
+          <div class="mb-3">
+            <label for="subject">Subject:</label>
+            <input type="text" class="form-control" id="subject" placeholder="Enter Subject">
+          </div>
+
+          <div class="mb-3">
+            <label for="message">Message or Query:</label>
+            <textarea id="textarea" class="form-control" rows="4" placeholder="Enter your Message/Query"></textarea>
+          </div>
+      
+          <button type="submit" class="btn btn-primary w-100">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+
+<div class="container m-auto">
+  <div class="info-table">
+    <div class="info-table-head"><h2>Our Contact Information<h2></div>
+    <table class="table table-hover table-bordered text-center">
+      
+      <thead class="bg-dark text-centered">
+        <tr>
+          <th scope="col">Campus</th>
+          <th scope="col">Mobile Number</th>
+          <th scope="col">Email</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        <tr>
+            <th scope="col">Angeles</th>
+            <td>+63 969 645 4495</td>
+            <td>admissions_an@obmontessori.edu.ph</td>     
+        </tr>
+
+        <tr>
+            <th scope="col">Fairview</th>
+            <td>+63 909 560 4067</td>
+            <td>admissions_fv@obmontessori.edu.ph</td>     
+       </tr>
+
+       <tr>
+            <th scope="col">Greenhills</th>
+            <td>+63 918 419 4504</td>
+            <td>admissions_gh@obmontessori.edu.ph</td>     
+       </tr>
+
+       <tr>
+            <th scope="col">Las Piñas</th>
+            <td>+63 921 325 1838</td>
+            <td>admissions_lp@obmontessori.edu.ph</td>     
+       </tr>
+
+       <tr>
+            <th scope="col">Sta. Ana</th>
+            <td>+63 928 459 6762</td>
+            <td>admissions_sa@obmontessori.edu.ph</td>     
+       </tr>
+
+      </tbody>
+    </div>
+
+  </table>
+
+</div>
+</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
